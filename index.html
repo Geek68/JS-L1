@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>projet</title>
+        <link rel="stylesheet" href="styleprojet.css">
+    </head>
+    <body>
+        <header >
+            <p class="titre">PROJET JAVASCRIPT</p>
+        </header>
+        <!--menu-->
+    <div class="contenue">
+        <aside >
+            <img src="MANDA.jpg" class="photoHNA">
+            <div class="presentation">
+                <strong>
+                <p>ANDRIANITRINIAINA Njatovo Hyacinthe<br>2785 L1 PRO 2020</p><br>
+                <p>ANDRIAMBOLOLONIAINA Arsène Dian Harddy<br>2783 L1 PRO 2020</p><br>
+                <p>TODY Eugène Romario<br> 2784 L1 PRO 2020</p>
+               
+                </strong>
+            </div>
+            <div class="menu">
+                <button class="btn" id="Acc">Acceuil</button><br><br>
+                <button class="btn" id="second">Equation du 2nd degree</button><br><br>
+                <button class="btn" id="cramer">Methode de CRAMER</button><br><br>
+                <button class="btn" id="circuit">Circuit Electrique</button><br><br>
+                <button class="btn" id="panneau">Panneau Publicitaire</button> 
+            </div>
+        </aside>
+        <!--menu-->
+
+        <!--2nd degree-->
+        <article id="degree2">
+            <h1>Equation du 2nd degree</h1>
+            <div class="formulaire1">
+                <fieldset class="fld1">
+                    <legend class="lb1">Equation</legend>
+                    <form action="javascript:degree2()" name="2degre">
+                      <div class="stm">
+                        <input type="text" id="vara" name="a" placeholder="valeur de a ">
+                        <label for="vara">X<sup>2</sup> + </label>
+                       <input type="text" id="varb" name="b" placeholder="valeur de b"> <!--eqeuation-->
+                       <label for="varb">X + </label>
+                       <input type="text" id="varc" name="c" placeholder="valeur de c">
+                       <label>= 0</label>
+                      </div>
+                        <br><br><br>
+                        <div class="RSD">
+                            <input type="submit" value="RESOLVE" class="resoudre1">
+                            <input type="submit" value="Reset" class="reset1">
+                        </div>
+                    </form>
+                </fieldset>
+                <br><br>
+            </div>
+            <div class="valiny">
+                <div class="etape"> 
+                    <fieldset class="fd">
+                        <legend class="lb2">Etape de calcul</legend>
+                        <p class="DELTA">delta= <strong class="dlt"></strong></p>
+                        <p class="rps"></p> <!--etape de calcul-->
+                    </fieldset>
+                </div>
+                <div class="reponse">
+                    <fieldset class="fd">
+                        <legend class="lb2">Reponse</legend>
+                        <p class="solution1">X<sub>1</sub>=  <strong class="s1" id="s1"></strong></p><br>
+                        <p class="solution2">X<sub>2</sub>=  <strong class="s2"></strong></p> <!--reponse-->
+                    </fieldset>
+                </div> 
+        </article>
+        <!--2nd degree-->
+
+        <!--cramer-->
+        <article id="CRAMER">
+            <p class="titlecrm">Methode de cramer</p>
+           <div class="formulaire2">
+            <fieldset class="fild2">
+                <legend class="leg2">Equation</legend>
+                <form name="cramer" action="javascript:cramer()" class="equation">
+                         <div class="systeme">
+                             <input type="text" name="a11" id="vara11" placeholder="valeur de a11">
+                             <label for="vara11" class="I">x<sub>1</sub> +</label>
+                             <input type="text" name="a12" id="vara12" placeholder="valeur de a12">
+                             <label for="vara12" class="II">x<sub>2</sub> +</label>
+                             <input type="text" name="a13" id="vara13" placeholder="valeur de a13">
+                             <label for="vara13"  class="III">x<sub>3</sub> =</label>
+                             <input type="text" name="b1" id="varb1" placeholder="valeur de b1"><br><br><br>
+                             <input type="text" name="a21" id="vara21" placeholder="valeur de a21">
+                             <label for="vara21" class="I">x<sub>1</sub> +</label>
+                             <input type="text" name="a22" id="vara22" placeholder="valeur de a22">
+                             <label for="vara22" class="II">x<sub>2</sub> +</label>
+                             <input type="text" name="a23" id="vara23" placeholder="valeur de a23">
+                             <label for="vara23"  class="III">x<sub>3</sub> =</label>
+                             <input type="text" name="b2" id="varb2" placeholder="valeur de b2"><br><br><br>
+                             <input type="text" name="a31" id="vara31" placeholder="valeur de a31">
+                             <label for="vara31" class="I">x<sub>1</sub> +</label>
+                             <input type="text" name="a32" id="vara12" placeholder="valeur de a32">
+                             <label for="vara32" class="II">x<sub>2</sub> +</label>
+                             <input type="text" name="a33" id="vara33" placeholder="valeur de a33">
+                             <label for="vara33"  class="III">x<sub>3</sub> =</label>
+                             <input type="text" name="b3" id="varb3" placeholder="valeur de b3"><br><br><br>
+                         </div>
+                         <div class="RSD2">
+                            <input type="submit" value="Resoudre" class="resoudre2">
+                         <input type="submit" value="Renitialisation" class="reset2">
+                         </div>
+                  </form>
+                </fieldset>
+           </div>
+            <div class="determinant">
+                <fieldset class="fild2">
+                    <legend class="leg2">Etape de Calcul</legend>
+                        <p>det<sub>princ</sub>=   <strong class="det"></strong></p>
+                        <p>detx<sub>1</sub>=  <strong class="detx"></strong></p>
+                       <p>detx<sub>2</sub>=  <strong class="dety"></strong></p><!--etape de calcul de cramer-->
+                        <p>detx<sub>3</sub>=  <strong class="detz"></strong></p>
+                        <p class="valdet"></p>
+               </fieldset>
+            </div>
+            <div class="variable">
+                <fieldset class="fild2">
+                    <legend class="leg2">Reponse</legend>
+                        <br><br>
+                        <p class="I"> X<sub>1</sub>=  <strong class="X1"></strong></p>
+                        <p class="II">X<sub>2</sub>=  <strong class="X2"></strong></p><!--reponse de cramer-->
+                        <p class="III">X<sub>3</sub>=  <strong class="X3"></strong></p>
+                </fieldset>
+            </div>
+        </article>
+        <!--cramer-->
+
+        <!--Circuit electrique-->
+        <article id="electrique">
+            <p>Circuit Electrique </p>
+        <canvas id="schema" width="700" height="330" ></canvas>
+        <div class="donnee">
+            <fieldset class="field3">
+                <legend class="lgd3">DONNEE</legend>
+                <div class="DON">
+                    <form action="javascript:circuit()" name="circuit" class="formulaire3">
+                        <label for="U">U=</label>
+                        <input type="text" name="U" id="U" placeholder="valeur de U"><br><br>
+                        <label for="R1">R<sub>1</sub>=</label>
+                        <input type="text" name="R1" id="R1" placeholder="valeur de R1"><br><br>
+                        <label for="R2">R<sub>2</sub>=</label>
+                        <input type="text" name="R2" id="R2" placeholder="valeur de R2"><br><br>
+                        <label for="R3">R<sub>3</sub>=</label>
+                        <input type="text" name="R3" id="R3" placeholder="valeur de R3"><br><br>
+                        <label for="R4">R<sub>4</sub>=</label>
+                        <input type="text" name="R4" id="R4" placeholder="valeur de R4"><br><br>
+                </div>
+                <div class="RSD3">
+                    <input type="submit" value="Calcul" class="resoudre3">
+                    <input type="submit" value="retour" class="reset3">
+                </div>
+                </form>
+            </fieldset>
+        </div>
+        <strong class="fleche">=></strong>
+        <div class="intensite">
+           <form name="intensite">
+            <fieldset  class="field3">
+                <legend class="lgd3">Valeur d'intensite</legend>
+                <label for="I1">I<sub>1</sub>=</label>
+                <input type="text" name="I1" id="I1" placeholder="valeur de I1"><br><br>
+                <label for="I2">I<sub>2</sub>=</label>
+                <input type="text" name="I2" id="I2" placeholder="valeur de I2"><br><br>
+                <label for="I3">I<sub>3</sub>=</label>
+                <input type="text" name="I3" id="I3" placeholder="valeur de I3"><br><br>
+            </fieldset>
+           </form>
+           </div>
+           <div class="tension">
+            <form name="tension">
+                <fieldset  class="field3">
+                    <legend class="lgd3">Valeur de tension</legend>
+                    <label for="U1">U<sub>1</sub>=</label>
+                    <input type="text" name="U1" id="U1" placeholder="valeur de U1"><br><br>
+                    <label for="U2">U<sub>2</sub>=</label>
+                    <input type="text" name="U2" id="U2" placeholder="valeur de U2"><br><br>
+                    <label for="U3">U<sub>3</sub>=</label>
+                    <input type="text" name="U3" id="U3" placeholder="valeur de U3"><br><br>
+                </fieldset>
+               </form>
+           </div>
+        </article>
+        <!--circuit electrique-->
+
+        <!-- image en slide -->
+        <article id="slide">
+            <p class="titre4"> image en slide</p>
+            <div class="image">
+                <img  class="image1" src="img1.jpg">
+                <img class="img2" src="img2.jpg">
+                <img class="img3" src="img3.jpg">
+                <img class="img4" src="img4.jpg">
+                <img class="img5" src="img5.jpg">
+            </div>
+            <div class="button">
+                <div class="button-gauche"> <<</div>
+                <div class="button-droite">>></div>
+            </div>
+        </article>
+        <article id="acceuil">
+            <p class="title4">PROJET JAVASCRIPT</p>
+            <p class="phrase">Les problèmes à resoudre dans ce projet sont:</p>
+                <ul class="liste">
+                    <li>Equation du 2nd degree</li>
+                    <li>Methode de Cramer</li>
+                    <li>Circuit Electrique</li>
+                    <li>Panneau Publicitaire</li>
+                </ul>
+        </article>
+    </div>
+        <script src="dynamisme.js"></script>
+        <script src="jquery.js"></script>
+        <script >
+            $(document ).ready(function (){
+                $('header p').fadeOut(2000);
+                $('header p').fadeIn(4000);
+               $('.btn').click(function (){
+                    $('header p').fadeOut(2000);
+                    $('header p').fadeIn(4000);
+               })
+            })
+        </script>
+    </body>
+</html>
